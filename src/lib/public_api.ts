@@ -39,6 +39,7 @@ export * from './sidenav/index';
 export * from './slider/index';
 export * from './slide-toggle/index';
 export * from './snack-bar/index';
+export * from './toast/index';
 export * from './sort/index';
 export * from './table/index';
 export * from './tabs/index';

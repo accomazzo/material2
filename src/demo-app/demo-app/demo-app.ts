@@ -81,6 +81,7 @@ export class DemoApp {
     {name: 'Slider', route: '/slider'},
     {name: 'Slide Toggle', route: '/slide-toggle'},
     {name: 'Snack Bar', route: '/snack-bar'},
+    {name: 'Toast', route: '/toast'},
     {name: 'Table', route: '/table'},
     {name: 'Tabs', route: '/tabs'},
     {name: 'Toolbar', route: '/toolbar'},

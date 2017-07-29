@@ -9,9 +9,9 @@
 import {NgModule} from '@angular/core';
 import {OverlayModule, PortalModule, MdCommonModule, LIVE_ANNOUNCER_PROVIDER} from '../core';
 import {CommonModule} from '@angular/common';
-import {MdSnackBar} from './snack-bar';
-import {MdSnackBarContainer} from './snack-bar-container';
-import {SimpleSnackBar} from './simple-snack-bar';
+import {MdSnackBar} from '../snack-bar/snack-bar';
+import {MdSnackBarContainer} from '../snack-bar/snack-bar-container';
+import {SimpleSnackBar} from '../snack-bar/simple-snack-bar';
 
 
 @NgModule({
@@ -26,11 +26,11 @@ import {SimpleSnackBar} from './simple-snack-bar';
   entryComponents: [MdSnackBarContainer, SimpleSnackBar],
   providers: [MdSnackBar, LIVE_ANNOUNCER_PROVIDER]
 })
-export class MdSnackBarModule {}
+export class MdToastModule {}
 
 
-export * from './snack-bar';
-export * from './snack-bar-container';
+export * from './toast';
+/*  export * from './snack-bar-container';
 export * from './snack-bar-config';
 export * from './snack-bar-ref';
-export * from './simple-snack-bar';
+export * from './simple-snack-bar';  */

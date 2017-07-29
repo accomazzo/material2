@@ -28,6 +28,7 @@ import {SelectDemo} from '../select/select-demo';
 import {SliderDemo} from '../slider/slider-demo';
 import {SidenavDemo} from '../sidenav/sidenav-demo';
 import {SnackBarDemo} from '../snack-bar/snack-bar-demo';
+import {ToastDemo} from '../toast/toast-demo';
 import {PortalDemo, ScienceJoke} from '../portal/portal-demo';
 import {MenuDemo} from '../menu/menu-demo';
 import {FoggyTabContent, RainyTabContent, SunnyTabContent, TabsDemo} from '../tabs/tabs-demo';
@@ -80,6 +81,7 @@ import {TableHeaderDemo} from '../table/table-header-demo';
     MdCheckboxDemoNestedChecklist,
     MenuDemo,
     SnackBarDemo,
+    ToastDemo,
     OverlayDemo,
     PortalDemo,
     ProgressBarDemo,

@@ -27,6 +27,7 @@ import {RippleDemo} from '../ripple/ripple-demo';
 import {DialogDemo} from '../dialog/dialog-demo';
 import {TooltipDemo} from '../tooltip/tooltip-demo';
 import {SnackBarDemo} from '../snack-bar/snack-bar-demo';
+import {ToastDemo} from '../toast/toast-demo';
 import {TABS_DEMO_ROUTES} from '../tabs/routes';
 import {PlatformDemo} from '../platform/platform-demo';
 import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
@@ -74,6 +75,7 @@ export const DEMO_APP_ROUTES: Routes = [
     {path: 'dialog', component: DialogDemo},
     {path: 'tooltip', component: TooltipDemo},
     {path: 'snack-bar', component: SnackBarDemo},
+    {path: 'toast', component: ToastDemo},
     {path: 'platform', component: PlatformDemo},
     {path: 'style', component: StyleDemo},
     {path: 'typography', component: TypographyDemo},

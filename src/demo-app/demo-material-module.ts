@@ -66,6 +66,7 @@ import {CdkTableModule} from '@angular/cdk/table';
     MdSlideToggleModule,
     MdSliderModule,
     MdSnackBarModule,
+    MdToastModule,
     MdSortModule,
     MdTabsModule,
     MdToolbarModule,

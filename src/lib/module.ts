@@ -35,6 +35,7 @@ import {MdProgressSpinnerModule} from './progress-spinner/index';
 import {MdProgressBarModule} from './progress-bar/index';
 import {MdInputModule} from './input/index';
 import {MdSnackBarModule} from './snack-bar/index';
+import {MdToastModule} from './toast/index';
 import {MdTabsModule} from './tabs/index';
 import {MdToolbarModule} from './toolbar/index';
 import {MdTooltipModule} from './tooltip/index';
@@ -75,6 +76,7 @@ const MATERIAL_MODULES = [
   MdSliderModule,
   MdSlideToggleModule,
   MdSnackBarModule,
+  MdToastModule,
   MdSortModule,
   MdTabsModule,
   MdToolbarModule,
