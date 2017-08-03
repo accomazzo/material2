@@ -23,17 +23,17 @@ import {
 } from '../core';
 import {PortalInjector} from '../core/portal/portal-injector';
 import {extendObject} from '../core/util/object-extend';
-import {MdSnackBarConfig, MD_SNACK_BAR_DATA} from './snack-bar-config';
-import {MdSnackBarRef} from './snack-bar-ref';
-import {MdSnackBarContainer} from './snack-bar-container';
-import {SimpleSnackBar} from './simple-snack-bar';
+import {MdSnackBarConfig, MD_SNACK_BAR_DATA} from '../snack-bar/snack-bar-config';
+import {MdSnackBarRef} from '../snack-bar/snack-bar-ref';
+import {MdToastContainer} from './toast-container'; 
+import {SimpleSnackBar} from '../snack-bar/simple-snack-bar';
 
 
 /**
  * Service to dispatch Material Design snack bar messages.
  */
 @Injectable()
-export class MdSnackBar {
+export class MdToast {
   /**
    * Reference to the current snack bar in the view *at this level* (in the Angular injector tree).
    * If there is a parent snack-bar service, all operations should delegate to that parent
@@ -59,7 +59,7 @@ export class MdSnackBar {
       private _overlay: Overlay,
       private _live: LiveAnnouncer,
       private _injector: Injector,
-      @Optional() @SkipSelf() private _parentSnackBar: MdSnackBar) {}
+      @Optional() @SkipSelf() private _parentSnackBar: MdToast) {}
 
   /**
    * Creates and dispatches a snack bar with a custom component for the content, removing any
@@ -135,9 +135,9 @@ export class MdSnackBar {
    * Attaches the snack bar container component to the overlay.
    */
   private _attachSnackBarContainer(overlayRef: OverlayRef,
-                                   config: MdSnackBarConfig): MdSnackBarContainer {
-    const containerPortal = new ComponentPortal(MdSnackBarContainer, config.viewContainerRef);
-    const containerRef: ComponentRef<MdSnackBarContainer> = overlayRef.attach(containerPortal);
+                                   config: MdSnackBarConfig): any {
+    const containerPortal = new ComponentPortal(MdToastContainer, config.viewContainerRef);
+    const containerRef: ComponentRef<any> = overlayRef.attach(containerPortal);
     containerRef.instance.snackBarConfig = config;
     return containerRef.instance;
   }

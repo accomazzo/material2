@@ -9,8 +9,8 @@
 import {NgModule} from '@angular/core';
 import {OverlayModule, PortalModule, MdCommonModule, LIVE_ANNOUNCER_PROVIDER} from '../core';
 import {CommonModule} from '@angular/common';
-import {MdSnackBar} from '../snack-bar/snack-bar';
-import {MdSnackBarContainer} from '../snack-bar/snack-bar-container';
+import {MdToast} from './toast';
+import {MdToastContainer} from './toast-container';
 import {SimpleSnackBar} from '../snack-bar/simple-snack-bar';
 
 
@@ -21,16 +21,16 @@ import {SimpleSnackBar} from '../snack-bar/simple-snack-bar';
     CommonModule,
     MdCommonModule,
   ],
-  exports: [MdSnackBarContainer, MdCommonModule],
-  declarations: [MdSnackBarContainer, SimpleSnackBar],
-  entryComponents: [MdSnackBarContainer, SimpleSnackBar],
-  providers: [MdSnackBar, LIVE_ANNOUNCER_PROVIDER]
+  exports: [MdToastContainer, MdCommonModule],
+  declarations: [MdToastContainer, SimpleSnackBar],
+  entryComponents: [MdToastContainer, SimpleSnackBar],
+  providers: [MdToast, LIVE_ANNOUNCER_PROVIDER]
 })
 export class MdToastModule {}
 
 
 export * from './toast';
-/*  export * from './snack-bar-container';
-export * from './snack-bar-config';
-export * from './snack-bar-ref';
-export * from './simple-snack-bar';  */
+  export * from './toast-container';
+/* export * from '../snack-bar/snack-bar-config';
+export * from '../snack-bar/snack-bar-ref';
+export * from '../snack-bar/simple-snack-bar';   */
